@@ -1,11 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Nosotros - Solo Shopping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/styles.css">
+    <style>
+        .nosotros-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            color: #000;
+        }
+
+        .hero-nosotros {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .hero-nosotros h1 {
+            font-family: 'Alumni Sans Pinstripe', sans-serif;
+            font-size: 48px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .hero-nosotros p {
+            font-size: 20px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .info-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .info-card h2 {
+            font-family: 'Alumni Sans Pinstripe', sans-serif;
+            font-size: 32px;
+            color: #000;
+            margin-bottom: 15px;
+        }
+
+        .info-card p {
+            color: #555;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .valores-section {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .valores-section h2 {
+            font-family: 'Alumni Sans Pinstripe', sans-serif;
+            font-size: 42px;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+        .valores-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .valor-item {
+            background: linear-gradient(135deg, #000 0%, #333 100%);
+            color: #fff;
+            padding: 25px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+
+        .valor-item:hover {
+            background: linear-gradient(135deg, #e9b300 0%, #ffcc00 100%);
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .hero-nosotros h1 {
+                font-size: 36px;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <header id="cabeza">
+        <a href="/soloshopping/"><img src="../assets/images/LOGO.png" alt="Banner principal"></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="/soloshopping/">INICIO</a></li>
+                <li><a href="/branch/nosotros.html">NOSOTROS</a></li>
+                <li><a href="/branch/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="nosotros-container">
+        <div class="hero-nosotros">
+            <h1>SOBRE SOLO SHOPPING</h1>
+            <p>Tu tienda de confianza para tecnología innovadora y accesorios de última generación</p>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h2>🎯 Nuestra Misión</h2>
+                <p>Ofrecer productos tecnológicos de alta calidad a precios accesibles, facilitando el acceso a la innovación para todos nuestros clientes en Chile.</p>
+            </div>
+
+            <div class="info-card">
+                <h2>👁️ Nuestra Visión</h2>
+                <p>Convertirnos en la tienda online líder en tecnología y accesorios inteligentes, reconocida por nuestra excelencia en servicio y calidad de productos.</p>
+            </div>
+
+            <div class="info-card">
+                <h2>📦 Qué Ofrecemos</h2>
+                <p>Localizadores GPS, auriculares premium, y una creciente selección de tecnología smart. Todos nuestros productos son cuidadosamente seleccionados para garantizar tu satisfacción.</p>
+            </div>
+        </div>
+
+        <div class="valores-section">
+            <h2>NUESTROS VALORES</h2>
+            <div class="valores-list">
+                <div class="valor-item">✨ Calidad</div>
+                <div class="valor-item">🤝 Confianza</div>
+                <div class="valor-item">🚀 Innovación</div>
+                <div class="valor-item">💚 Compromiso</div>
+                <div class="valor-item">⚡ Rapidez</div>
+            </div>
+        </div>
+
+        <div class="info-grid" style="margin-top: 80px;">
+            <div class="info-card">
+                <h2>🚚 Envíos</h2>
+                <p>Realizamos envíos a todo Chile. Despacho rápido y seguro con seguimiento de tu pedido en tiempo real.</p>
+            </div>
+
+            <div class="info-card">
+                <h2>💳 Métodos de Pago</h2>
+                <p>Aceptamos transferencias bancarias, tarjetas de crédito y débito. Compra de forma segura y confiable.</p>
+            </div>
+
+            <div class="info-card">
+                <h2>🔒 Garantía</h2>
+                <p>Todos nuestros productos cuentan con garantía. Tu satisfacción es nuestra prioridad número uno.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Nicolás Castillo Azócar | No se rindan.</p>
+        <p>&copy; 2025 Lucid House</p>
+    </footer>
+
+    <button id="btnArriba">⬆</button>
+    <script src="/js/apps.js"></script>
 </body>
 </html>
